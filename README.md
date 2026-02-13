@@ -1,141 +1,168 @@
-# Budget-Constrained AI Interior Design System
 
-## MSc Project - 100% Original Implementation
+# Budget-Constrained AI Interior Design System  
+### MSc Project Submission
 
-This project implements an AI-powered interior design system with offline GPU acceleration, budget estimation, and multiple AI provider support.
+This project presents a full-stack AI-powered interior design system that integrates generative models, computer vision, GPU acceleration, and budget-aware decision logic into a unified application.
 
----
-
-## 🎓 Academic Integrity Statement
-
-**This project consists of 100% original work:**
-
-### Backend (Entirely Original)
-
-- Complete FastAPI server implementation
-- Offline Diffusers integration with CUDA GPU support
-- Three AI provider implementations (Offline, Replicate, HuggingFace)
-- Budget estimation system
-- Storage and logging services
-- All services and providers written from scratch
-
-### Frontend (Entirely Original)
-
-- Clean HTML5/CSS3/JavaScript implementation
-- No frameworks or templates used
-- All code written specifically for this project
-- Modern responsive design
-- Complete backend integration
-
-**No code was copied from existing projects.** All implementation was done from scratch following best practices and modern web development standards.
+The system supports both fully offline execution (with CUDA acceleration) and online inference providers, making it flexible across different hardware environments.
 
 ---
 
-## ✨ Features
+## 🎓 Project Overview
 
-### AI Design Generation
+This project demonstrates the integration of:
 
-1. **Offline AI Generation** - Works without internet using local GPU
-2. **GPU Acceleration** - CUDA support for fast generation (~8 seconds)
-3. **CPU Fallback** - Automatic fallback to CPU if no GPU available
-4. **Multiple Providers** - Offline, Replicate, or HuggingFace
-5. **6 Room Types** - Living Room, Bedroom, Kitchen, Bathroom, Office, Dining Room
-6. **4 Design Styles** - Modern, Minimalist, Vintage, Professional
-7. **Budget Estimation** - Rule-based cost tracking
-8. **No User Prompts** - Automatic prompt generation
+- Generative AI (Stable Diffusion via Diffusers)
+- Computer Vision (YOLOv8 object detection)
+- GPU acceleration (CUDA with PyTorch)
+- REST API architecture (FastAPI)
+- Budget-constrained decision systems
+- Multi-provider AI deployment strategy
+- Full-stack development (Backend + Frontend)
 
-### Furniture Detection & Shopping (NEW)
-
-9. **YOLO AI Detection** - Detects sofa, bed, table, chair, TV in uploaded images
-10. **Smart Suggestions** - Dual suggestion system:
-    - **Local Catalog**: 41 furniture items (6-8 per category) with prices ₹6.5k-₹2.25L
-    - **Online Vendors**: 5 curated vendor links per category (instant, no API)
-11. **Budget Calculator** - Shows remaining budget after purchases
-12. **Real Shopping Links** - Direct links to Pepperfry, Urban Ladder, IKEA, Amazon, etc.
-
-### User Interface
-
-13. **Simple UI** - Clean, professional interface with tabs
-14. **Tabbed Suggestions** - Switch between Local Replacements and Online Vendors
-15. **Download Results** - Save generated images
-16. **Responsive Design** - Works on desktop and tablet
+All components were designed and implemented specifically for this MSc project following modern development standards and modular architecture principles.
 
 ---
 
-## 🚀 Quick Start
+## ✨ Core Features
+
+### 🖼️ AI-Based Interior Design Generation
+
+- Offline AI Generation – Fully functional without internet  
+- CUDA GPU Acceleration – Optimized for NVIDIA GPUs (~10–30 seconds per image)  
+- CPU Fallback Mode – Runs on systems without GPU  
+- Automated Prompt Engineering – No manual user prompt required  
+- Budget-Constrained Design Logic – Style-based cost estimation  
+
+#### Multiple AI Providers
+
+- Local Diffusers (Offline)
+- Replicate API
+- HuggingFace Inference API
+
+#### Supported Room Types
+
+- Living Room
+- Bedroom
+- Kitchen
+- Bathroom
+- Office
+- Dining Room
+
+#### Supported Design Styles
+
+- Modern
+- Minimalist
+- Vintage
+- Professional
+
+---
+
+## 🛋️ Furniture Detection & Intelligent Suggestions
+
+- YOLOv8 Object Detection  
+  - Detects sofa, bed, table, chair, TV from uploaded images  
+
+- Dual Suggestion System  
+  - Local Furniture Catalog (41 structured entries)  
+  - Online Vendor Links (Pepperfry, Urban Ladder, IKEA, Amazon, etc.)
+
+- Dynamic Budget Calculator  
+  - Tracks remaining budget after furniture selection  
+
+- Direct Shopping Links  
+  - Real-world vendor redirection  
+
+---
+
+## 🖥️ User Interface
+
+- Clean, professional UI  
+- Tab-based suggestion switching  
+- Image download functionality  
+- Responsive layout (desktop + tablet)  
+
+---
+
+## 🚀 Quick Start Guide
 
 ### Backend Setup
 
 ```bash
 cd backend
 
-# Create virtual environment
 python -m venv venv
 venv\Scripts\activate  # Windows
 
-# Install dependencies
 pip install -r requirements.txt
 
 # Optional: Install PyTorch with CUDA
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 
-# Start backend
 python main.py
+````
+
+Backend runs at:
+
+```
+http://localhost:8000
 ```
 
-Backend runs at: `http://localhost:8000`
+---
 
 ### Frontend Setup
 
 ```bash
 cd frontend
-
-# Simply open in browser
 start index.html  # Windows
-# OR use a simple server:
+```
+
+Or run a simple local server:
+
+```bash
 python -m http.server 8080
 ```
 
-Frontend opens in your default browser.
+---
+
+## 📖 System Workflow
+
+1. User uploads a room image
+2. Selects room type and style
+3. Chooses AI provider
+4. Enters budget
+5. System generates redesigned image
+6. YOLO detects furniture
+7. Budget-aware suggestions are provided
+8. User downloads final output
 
 ---
 
-## 📖 Usage
-
-1. **Upload** a room photo
-2. **Select** room type and design style
-3. **Choose** AI provider (Offline recommended)
-4. **Enter** your budget
-5. **Generate** and view results
-6. **Check** budget status
-
----
-
-## 🏗️ Architecture
+## 🏗️ System Architecture
 
 ### Backend (FastAPI)
 
 ```
 backend/
-├── main.py                  # FastAPI app & endpoints
-├── config.py                # Settings & configuration
+├── main.py
+├── config.py
 ├── providers/
-│   ├── offline_diffusers.py # GPU-accelerated local AI
-│   ├── online_replicate.py  # Replicate API integration
-│   └── online_hf_inference.py # HuggingFace API
+│   ├── offline_diffusers.py
+│   ├── online_replicate.py
+│   └── online_hf_inference.py
 └── services/
-    ├── budget.py            # Cost estimation
-    ├── storage.py           # Image handling
-    └── logging.py           # Structured logging
+    ├── budget.py
+    ├── storage.py
+    └── logging.py
 ```
 
-### Frontend (HTML/CSS/JS)
+### Frontend (Vanilla Web Stack)
 
 ```
 frontend/
-├── index.html    # Clean semantic HTML5
-├── styles.css    # Modern responsive CSS
-└── script.js     # Vanilla JavaScript
+├── index.html
+├── styles.css
+└── script.js
 ```
 
 ---
@@ -144,34 +171,34 @@ frontend/
 
 ### Minimum (CPU Mode)
 
-- Python 3.10+
-- 8GB RAM
-- 15GB disk space
-- Any modern web browser
+* Python 3.10+
+* 8GB RAM
+* 15GB disk space
+* Modern browser
 
 ### Recommended (GPU Mode)
 
-- NVIDIA GPU with 4GB+ VRAM
-- CUDA 12.1+
-- 16GB RAM
-- Windows/Linux
+* NVIDIA GPU (4GB+ VRAM)
+* CUDA 12.1+
+* 16GB RAM
+* Windows/Linux
 
 ---
 
-## 📊 Performance
+## 📊 Performance Metrics
 
 | Mode       | Generation Time | Quality |
 | ---------- | --------------- | ------- |
-| GPU (CUDA) | 10-30 seconds   | High    |
-| CPU        | 2-5 minutes     | High    |
+| GPU (CUDA) | 10–30 seconds   | High    |
+| CPU        | 2–5 minutes     | High    |
 
-Both modes produce identical quality results.
+Image quality remains consistent across both modes; GPU significantly improves speed.
 
 ---
 
-## 🔧 Configuration
+## 🔧 Configuration Options
 
-### Optional: Online Providers
+### Online Provider Setup
 
 Create `backend/.env`:
 
@@ -180,9 +207,9 @@ REPLICATE_API_TOKEN=your_token_here
 HF_API_TOKEN=your_token_here
 ```
 
-### Budget Rules (Customizable)
+### Budget Rule Customization
 
-Edit `backend/config.py`:
+Modify in `backend/config.py`:
 
 ```python
 BUDGET_ESTIMATES = {
@@ -195,42 +222,19 @@ BUDGET_ESTIMATES = {
 
 ---
 
-## 🎨 Design Philosophy
+## 🎨 Design Principles
 
-This system was built with:
+This system was built with emphasis on:
 
-- **Academic integrity** - 100% original code
-- **Accessibility** - Works on any hardware (GPU optional)
-- **Simplicity** - Clean, understandable codebase
-- **Extensibility** - Easy to add new providers/features
-- **Professional quality** - MSc-level documentation
+* Modular architecture
+* Hardware adaptability (GPU optional)
+* Extensible provider system
+* Clear separation of concerns
+* Professional documentation
+* Academic research-level structure
 
----
+```
 
-## 📝 License
 
-This is an MSc academic project. All code is original work created for educational purposes.
 
----
 
-## 🙏 Acknowledgments
-
-- **Stable Diffusion** - For the open-source AI model
-- **FastAPI** - For the excellent backend framework
-- **PyTorch** - For GPU acceleration support
-
----
-
-## 👨‍🎓 MSc Submission Notes
-
-This project demonstrates:
-
-1. Full-stack development skills
-2. AI/ML integration (Diffusers, PyTorch)
-3. System architecture design
-4. API development (REST, multipart forms)
-5. Frontend development (HTML/CSS/JS)
-6. Performance optimization (GPU, caching)
-7. Professional documentation
-
-**All code is original and built from scratch for this submission.**
