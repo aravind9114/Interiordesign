@@ -1,0 +1,282 @@
+[
+    {
+        "sku": "SOF-001",
+        "category": "sofa",
+        "name": "Modern L-Shape Sofa Set",
+        "price": 25000,
+        "vendor": "IKEA",
+        "vendor_link": "https://www.ikea.com/in/en/"
+    },
+    {
+        "sku": "SOF-002",
+        "category": "sofa",
+        "name": "Compact 2-Seater Sofa",
+        "price": 18000,
+        "vendor": "Pepperfry",
+        "vendor_link": "https://www.pepperfry.com/"
+    },
+    {
+        "sku": "SOF-003",
+        "category": "sofa",
+        "name": "Premium Leather Sofa",
+        "price": 45000,
+        "vendor": "Urban Ladder",
+        "vendor_link": "https://www.urbanladder.com/"
+    },
+    {
+        "sku": "SOF-004",
+        "category": "sofa",
+        "name": "Fabric 3-Seater Sofa",
+        "price": 22000,
+        "vendor": "Pepperfry",
+        "vendor_link": "https://www.pepperfry.com/"
+    },
+    {
+        "sku": "SOF-005",
+        "category": "sofa",
+        "name": "Velvet Chesterfield Sofa",
+        "price": 38000,
+        "vendor": "Urban Ladder",
+        "vendor_link": "https://www.urbanladder.com/"
+    },
+    {
+        "sku": "SOF-006",
+        "category": "sofa",
+        "name": "Corner Sectional Sofa",
+        "price": 32000,
+        "vendor": "IKEA",
+        "vendor_link": "https://www.ikea.com/in/en/"
+    },
+    {
+        "sku": "BED-001",
+        "category": "bed",
+        "name": "Queen Engineered Wood Bed",
+        "price": 22000,
+        "vendor": "IKEA",
+        "vendor_link": "https://www.ikea.com/in/en/"
+    },
+    {
+        "sku": "BED-002",
+        "category": "bed",
+        "name": "King Size Upholstered Bed",
+        "price": 35000,
+        "vendor": "Urban Ladder",
+        "vendor_link": "https://www.urbanladder.com/"
+    },
+    {
+        "sku": "BED-003",
+        "category": "bed",
+        "name": "Single Bed with Storage",
+        "price": 15000,
+        "vendor": "Pepperfry",
+        "vendor_link": "https://www.pepperfry.com/"
+    },
+    {
+        "sku": "BED-004",
+        "category": "bed",
+        "name": "Solid Wood King Bed",
+        "price": 42000,
+        "vendor": "Urban Ladder",
+        "vendor_link": "https://www.urbanladder.com/"
+    },
+    {
+        "sku": "BED-005",
+        "category": "bed",
+        "name": "Metal Frame Queen Bed",
+        "price": 18000,
+        "vendor": "Pepperfry",
+        "vendor_link": "https://www.pepperfry.com/"
+    },
+    {
+        "sku": "BED-006",
+        "category": "bed",
+        "name": "Hydraulic King Bed with Storage",
+        "price": 28000,
+        "vendor": "IKEA",
+        "vendor_link": "https://www.ikea.com/in/en/"
+    },
+    {
+        "sku": "BED-007",
+        "category": "bed",
+        "name": "Tufted Platform Bed",
+        "price": 31000,
+        "vendor": "Urban Ladder",
+        "vendor_link": "https://www.urbanladder.com/"
+    },
+    {
+        "sku": "TAB-001",
+        "category": "table",
+        "name": "4-Seater Dining Table",
+        "price": 12000,
+        "vendor": "IKEA",
+        "vendor_link": "https://www.ikea.com/in/en/"
+    },
+    {
+        "sku": "TAB-002",
+        "category": "table",
+        "name": "6-Seater Wooden Table",
+        "price": 18000,
+        "vendor": "Urban Ladder",
+        "vendor_link": "https://www.urbanladder.com/"
+    },
+    {
+        "sku": "TAB-003",
+        "category": "table",
+        "name": "Glass Top Dining Table",
+        "price": 25000,
+        "vendor": "Pepperfry",
+        "vendor_link": "https://www.pepperfry.com/"
+    },
+    {
+        "sku": "TAB-004",
+        "category": "table",
+        "name": "Marble Top 6-Seater Table",
+        "price": 35000,
+        "vendor": "Urban Ladder",
+        "vendor_link": "https://www.urbanladder.com/"
+    },
+    {
+        "sku": "TAB-005",
+        "category": "table",
+        "name": "Extendable Dining Table",
+        "price": 22000,
+        "vendor": "IKEA",
+        "vendor_link": "https://www.ikea.com/in/en/"
+    },
+    {
+        "sku": "TAB-006",
+        "category": "table",
+        "name": "Round 4-Seater Table",
+        "price": 15000,
+        "vendor": "Pepperfry",
+        "vendor_link": "https://www.pepperfry.com/"
+    },
+    {
+        "sku": "TAB-007",
+        "category": "table",
+        "name": "Sheesham Wood 8-Seater Table",
+        "price": 42000,
+        "vendor": "Urban Ladder",
+        "vendor_link": "https://www.urbanladder.com/"
+    },
+    {
+        "sku": "CHR-001",
+        "category": "chair",
+        "name": "Ergonomic Office Chair",
+        "price": 8000,
+        "vendor": "IKEA",
+        "vendor_link": "https://www.ikea.com/in/en/"
+    },
+    {
+        "sku": "CHR-002",
+        "category": "chair",
+        "name": "Dining Chairs Set of 4",
+        "price": 12000,
+        "vendor": "Urban Ladder",
+        "vendor_link": "https://www.urbanladder.com/"
+    },
+    {
+        "sku": "CHR-003",
+        "category": "chair",
+        "name": "Velvet Accent Chair",
+        "price": 15000,
+        "vendor": "Pepperfry",
+        "vendor_link": "https://www.pepperfry.com/"
+    },
+    {
+        "sku": "CHR-004",
+        "category": "chair",
+        "name": "Mesh Back Office Chair",
+        "price": 6500,
+        "vendor": "Pepperfry",
+        "vendor_link": "https://www.pepperfry.com/"
+    },
+    {
+        "sku": "CHR-005",
+        "category": "chair",
+        "name": "Upholstered Dining Chairs (Set of 2)",
+        "price": 9000,
+        "vendor": "IKEA",
+        "vendor_link": "https://www.ikea.com/in/en/"
+    },
+    {
+        "sku": "CHR-006",
+        "category": "chair",
+        "name": "Recliner Chair with Ottoman",
+        "price": 22000,
+        "vendor": "Urban Ladder",
+        "vendor_link": "https://www.urbanladder.com/"
+    },
+    {
+        "sku": "CHR-007",
+        "category": "chair",
+        "name": "Wooden Rocking Chair",
+        "price": 11000,
+        "vendor": "Pepperfry",
+        "vendor_link": "https://www.pepperfry.com/"
+    },
+    {
+        "sku": "CHR-008",
+        "category": "chair",
+        "name": "Gaming Chair with RGB",
+        "price": 18000,
+        "vendor": "Urban Ladder",
+        "vendor_link": "https://www.urbanladder.com/"
+    },
+    {
+        "sku": "TV-001",
+        "category": "tv",
+        "name": "43-inch Smart TV (Full HD)",
+        "price": 28000,
+        "vendor": "Amazon",
+        "vendor_link": "https://www.amazon.in/"
+    },
+    {
+        "sku": "TV-002",
+        "category": "tv",
+        "name": "55-inch 4K Smart TV",
+        "price": 45000,
+        "vendor": "Flipkart",
+        "vendor_link": "https://www.flipkart.com/"
+    },
+    {
+        "sku": "TV-003",
+        "category": "tv",
+        "name": "32-inch HD LED TV",
+        "price": 18000,
+        "vendor": "Amazon",
+        "vendor_link": "https://www.amazon.in/"
+    },
+    {
+        "sku": "TV-004",
+        "category": "tv",
+        "name": "65-inch 4K OLED TV",
+        "price": 95000,
+        "vendor": "Flipkart",
+        "vendor_link": "https://www.flipkart.com/"
+    },
+    {
+        "sku": "TV-005",
+        "category": "tv",
+        "name": "50-inch 4K Smart TV",
+        "price": 38000,
+        "vendor": "Amazon",
+        "vendor_link": "https://www.amazon.in/"
+    },
+    {
+        "sku": "TV-006",
+        "category": "tv",
+        "name": "40-inch Full HD Smart TV",
+        "price": 24000,
+        "vendor": "Flipkart",
+        "vendor_link": "https://www.flipkart.com/"
+    },
+    {
+        "sku": "TV-007",
+        "category": "tv",
+        "name": "75-inch 8K QLED TV",
+        "price": 225000,
+        "vendor": "Amazon",
+        "vendor_link": "https://www.amazon.in/"
+    }
+]
